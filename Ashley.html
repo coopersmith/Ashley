@@ -356,6 +356,7 @@
 				{block:Posts}
 					<article class="post {PostType}">
 						{block:Text}
+						<div class="smallbucket">
 							{block:Title}
 								<a href="{Permalink}" class="post-title"><h2>{Title}</h2></a>
 							{/block:Title}
@@ -363,7 +364,7 @@
 							{Body}
 							
 							{block:More}<a href="{Permalink}" class="p">Read More &raquo;</a>{/block:More}
-							
+							</div>
 						{/block:Text}
 
 						{block:Photo}
