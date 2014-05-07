@@ -396,11 +396,10 @@
 						{/block:Photoset} --!>
 						
 						{block:Photoset}
-     					<article>
-       					 <span class="break" style="padding-bottom: 19px;"></span>
 
         				<!-- Go through each Photo in the Photoset -->
         				{block:Photos}
+        				<br>
             			<img src="{PhotoURL-HighRes}" class="highres">
         				{/block:Photos}
 
@@ -409,8 +408,7 @@
             <p>{Caption}</p>
             </div>
         {/block:Caption}
-       
-    </article>
+        
 {/block:Photoset}
 						
 
