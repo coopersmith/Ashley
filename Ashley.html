@@ -271,6 +271,7 @@
       
       ul.pages {
         list-style: none;
+        text-align: center;
       }
       
       ul.pages li {
@@ -347,6 +348,13 @@
   	{block:Description}
   		<p>{Description}</p>
   	{/block:Description}
+  	{block:HasPages}
+  		<ul class="pages">
+				{block:Pages}
+					<li><a href="{URL}">{Label}</a></li>
+				{/block:Pages}
+  		</ul>
+		{/block:HasPages}
   </header>
 
 		<div class="content wrap">
@@ -525,13 +533,6 @@
 		</div> <!-- /content -->
 	
 	<footer class="small wrap">
-  	{block:HasPages}
-  		<ul class="pages">
-				{block:Pages}
-					<li><a href="{URL}">{Label}</a></li>
-				{/block:Pages}
-  		</ul>
-		{/block:HasPages}
 		{block:AskEnabled}<a href="/ask">{AskLabel}</a>{/block:AskEnabled}
 	  {block:IfColophon}<p class="small">{text:Colophon}</p>{block:IfColophon}
 	</footer>
